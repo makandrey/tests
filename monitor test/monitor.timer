@@ -1,0 +1,10 @@
+[Unit]
+Description=Times for monitor.service
+Requires=monitor.service
+
+[Timer]
+OnCalendar=*:0/1
+Unit=monitor.service
+  
+[Install]
+WantedBy=timers.target

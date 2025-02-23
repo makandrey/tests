@@ -1,0 +1,8 @@
+[Unit]
+Description=Monitoring process test
+After=network.target
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/monitor.sh
+[Install]
+WantedBy=multi-user.target
